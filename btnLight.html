@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=320" name="viewport">
+<title>input没有输入按钮就不亮</title>
+<style>
+    .duan-disabled{ background-color: #f75555!important;opacity:0.5;}
+    .duan{ margin-bottom: 50px;}
+    .duan input{display: block; margin-bottom: 20px;}
+    .duan-btn-submit{display: block;text-align: center;font-size: 18px;color: #fff;background-color: #f75555;border-radius: 5px; width: 200px; border: none; line-height: 38px; text-decoration: none;cursor: pointer;}
+</style>
+</head>
+<body>
+
+    <div class="duan" id='abc'>
+        <input type="text" data-duan="true" class="aaa">
+        <input type="text" data-duan="true" class="aaa">
+        <input class="duan-btn-submit" duan-btn-submit="true" value="提交">
+    </div>
+
+    <input id="bbb" value="销毁" type="button">
+    
+    <script src="script/sea.js"></script>
+    <script>seajs.use("index")</script>
+</body>
+</html>
